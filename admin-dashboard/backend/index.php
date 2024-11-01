@@ -13,7 +13,7 @@ http_response_code(200);
 // ARRAY for JSON
 $array = array(
     'error'=>false,
-    'message'=>"Successfull!"
+    'message'=>"Successfull!s"
 );
 // ENCODE ARRAY to JSON
 $json = json_encode($array);
