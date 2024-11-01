@@ -17,6 +17,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Installing Docker
+        run: sudo apt install docker docker-compose
+
       # 2. Docker Compose bilan image yaratish
       - name: Build Docker images
         run: docker-compose -f docker-compose.yml build
