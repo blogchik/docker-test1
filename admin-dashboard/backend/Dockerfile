@@ -5,7 +5,7 @@ FROM php:8.1-apache
 RUN a2enmod headers
 
 # PHP faylingizni konteyner ichiga nusxalash
-COPY . /var/www/html
+COPY . .
 
 # Apache serverni ishga tushirish
 CMD ["apache2-foreground"]
