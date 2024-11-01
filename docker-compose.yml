@@ -1,59 +1,8 @@
 version: '3.8'
 
 services:
-  admin_dashboard_frontend:
-    image: blogchik/admin_dashboard_frontend:latest
-    build: ./admin-dashboard/frontend
-    ports:
-      - "3001:80"
-    networks:
-      - webnet
-
-  admin_dashboard_backend:
-    image: blogchik/admin_dashboard_backend:latest
-    build: ./admin-dashboard/backend
-    ports:
-      - "8001:80"
-    networks:
-      - webnet
-
-  api_service:
-    image: blogchik/api_service:latest
-    build: ./api
-    ports:
-      - "8002:80"
-    networks:
-      - webnet
-
-  main_website_frontend:
-    image: blogchik/main_website_frontend:latest
-    build: ./main-website/frontend
-    ports:
-      - "3000:80"
-    networks:
-      - webnet
-
-  main_website_backend:
-    image: blogchik/main_website_backend:latest
-    build: ./main-website/backend
-    ports:
-      - "8003:80"
-    networks:
-      - webnet
-
-  online_platform_frontend:
-    image: blogchik/online_platform_frontend:latest
-    build: ./online-platform/frontend
-    ports:
-      - "3002:80"
-    networks:
-      - webnet
-
-  online_platform_backend:
-    image: blogchik/online_platform_backend:latest
-    build: ./online-platform/backend
-    ports:
-      - "8004:80"
+  api:
+    
     networks:
       - webnet
 
